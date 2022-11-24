@@ -1,0 +1,163 @@
+body{
+  margin: 0;
+}
+
+.start-page{
+  display: flex;
+  flex-direction: column;
+  max-width: 600px;
+  margin: auto;
+  align-items: center;
+  justify-content: center;
+  color: #293264;
+  height: 100vh;
+}
+
+.start-page h1{
+  letter-spacing: 2px;
+  margin-bottom: 0;
+}
+
+.start-page p{
+  margin-top: 0.3em;
+}
+
+.start-page button{
+  background: #4D5B9E;
+  color: white;
+  padding: 0.3em 1em;
+  font-size: 20px;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+}
+
+button{
+  cursor: pointer;
+}
+
+.quiz-page{
+  width: 100%;
+}
+
+.quiz{
+  padding: 1.2em;
+  margin: auto;
+  border-bottom: 1px solid #293264;
+
+}
+
+.quiz p{
+  font-weight: bold;
+  color: #293264;
+  width: 100%;
+}
+
+.options{
+  display: flex;
+  flex-direction: column;
+}
+.option{
+  background: white;
+  padding: 0.4em 1em;
+  border-radius: 10px;
+  width: 60%;
+  margin: 0.2em auto;
+}
+
+
+.check-btn{
+  margin: 2em auto;
+  padding: 0.3em 1.2em;
+  border-radius: 10px;
+  display: block;
+  font-size: 20px;
+  background: #4D5B9E;
+  color:white;
+  cursor: pointer;
+
+}
+
+.check-btn:focus, .check-btn:hover{
+    transform: scale(110%);
+}
+
+.score{
+  color: #4D5B9E;
+  text-align: center;
+}
+
+ /* loading */
+.lds-ring {
+  display: flex;
+  margin: 10em auto;
+  position: relative;
+  width: 80px;
+  height: 80px;
+}
+.lds-ring div {
+  box-sizing: border-box;
+  display: block;
+  position: absolute;
+  width: 64px;
+  height: 64px;
+  margin: 8px;
+  border: 8px solid black;
+  border-radius: 50%;
+  animation: lds-ring 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
+  border-color: black transparent transparent transparent;
+}
+.lds-ring div:nth-child(1) {
+  animation-delay: -0.45s;
+}
+.lds-ring div:nth-child(2) {
+  animation-delay: -0.3s;
+}
+.lds-ring div:nth-child(3) {
+  animation-delay: -0.15s;
+}
+@keyframes lds-ring {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+
+/* footer */
+.footer{
+  background: #4D5B9E;
+  color: white;
+  text-align: center;
+  padding: 0.3em 0;
+}
+
+.footer h4{
+  margin: 0;
+}
+.footer p{
+  margin-top: 0.2em;
+  color: gainsboro;
+}
+
+
+@media (min-width:550px){
+  html{
+    font-size: 20px;
+  }
+  .quiz-page{
+    max-width: 80%;
+    margin: 0 auto;
+  }
+  .options{
+    flex-direction: row;
+  }
+
+  .option{
+    margin: 0 1em 0 0;
+    width: auto;
+  }
+
+}
